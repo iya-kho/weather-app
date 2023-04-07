@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather forecast</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+    <script type="module" src="./index.js"></script>
+    <script type="module" src="https://kit.fontawesome.com/2c26c8198a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <div id="container">
+            <div class="dropdown-icon">
+                <select name="dropdown" id="dropdown">
+                    <option value="-">-----</option>
+                    <option value="Lisbon">Lisbon</option>
+                    <option value="Kyiv">Kyiv</option>
+                    <option value="Warsaw">Warsaw</option>
+                    <option value="Paris">Paris</option>
+                    <option value="New York">New York</option>
+                    <option value="Sydney">Sydney</option>
+                    <option value="London">London</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                </select>
+                <img src="" alt="" class="icon center">
+            </div>
+                <span class="temp center"></span>
+                <span class="weather-description center"></span>
+                <div id="weather-container">
+                    <p class="time-date"></p>
+                    <h2 class="location"></h2>
+                    <div class="temp-icon">
+                        <img src="" alt="" class="icon">
+                        <p class="temp"></p>
+                    </div>            
+                    <p class="weather-description"></p>
+                    <div class="weather-details">
+                        <div class="wind">
+                            <i class="fa-solid fa-wind"></i>
+                            <p class="wind-text"></p>
+                        </div>
+                        <div class="pressure">
+                            <i class="fa-solid fa-gauge"></i>
+                            <p class="pressure-text"></p>
+                        </div>
+                        <div class="humidity">
+                            <i class="fa-solid fa-water"></i>
+                            <p class="humidity-text"></p>
+                        </div>
+                        <div class="visibility">
+                            <i class="fa-solid fa-eye"></i>
+                            <p class="visibility-text"></p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </main>
+</body>
+
+</html>
